@@ -238,7 +238,7 @@ export class DoorbirdStreamingDelegate implements CameraStreamingDelegate {
     // Configure our video parameters.
     const ffmpegVideoArgs =
       " -map 0:0" +
-      " -vcodec libx264" +
+      " -vcodec h264_v4l2m2m" +
       " -pix_fmt yuvj420p" +
       " -r " + request.video.fps +
       " -f rawvideo" +
